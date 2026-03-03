@@ -87,6 +87,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     justify-content: space-between;
     margin: 50px 30px;
+     background-color: rgb(227, 227, 123) ;
 }
 .workmetrix h4 {
     font-size: 30px;
@@ -126,6 +127,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 20px;
     padding-top: 30px;
     padding-bottom: 30px;
+     background-color: rgb(227, 227, 123) ;
 }
 
 .logodescription {
@@ -175,6 +177,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  justify-content: space-between;
  gap: 30px;
  margin: 50px 30px;
+  background-color: rgb(227, 227, 123) ;
 
 }
 .all-work h4 {
@@ -222,10 +225,15 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 /* CLIENTS SECTION */
 .clients {
-    display: flex;
-    gap: 20px;
+      display: flex;
+    gap: 25px;
+    align-items: center;
+    background-color: bisque;
+    padding: 50px 80px;
+    justify-content: center;
     align-items: center;
 }
+  
 
 .clients-msg {
     width: 400px;
@@ -233,11 +241,12 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 .clients-msg h4 {
     font-size: 25px;
     padding: 20px;
+    margin-top: 15px;
 }
 .clients-msg .views {
-    display: flex;
-    flex-direction: column;
-    width: 50px;
+    background-color: bisque;
+    padding: 35px;
+    border-radius: 15px;
 }
 /* THE FOOTER SECTION */
 .footer {
@@ -255,11 +264,16 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     flex-wrap: wrap;
     margin: 0 auto;
 }
+.footer-info h2  {
+    display: flex;
+    color: black;
+}
 
 .footer-contact {
     display: flex;
     flex-direction: column;
     margin-right: 30px;
+    background-color: grey;
 }
 
 .footer-contact h4 {
@@ -267,14 +281,15 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .footer-contact a {
-    color: white;
+    color: blue;
     text-decoration: none;
-    margin-bottom: 0.5px;
+    margin-bottom: 0.5px
 }
-.footer-tags {
+.footer-tags a {
     display: flex;
     flex-direction: column;
     margin-right: 4px;
+    color: black;
 }
 .footer-tags h2 {
     margin-bottom: 4px;
@@ -284,4 +299,60 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     flex-direction: column;
     margin-bottom: 5px;
+}
+
+
+/* THE MEDIA SECTION */
+@media (max-width: 768px) {
+.navelements {
+    display: none;
+}
+
+.herosection .herodescription {
+    width: 300px;
+}
+.herosection .herodescription h1 {
+font-size: 20px;
+padding: 10px;
+}
+
+.herosection {
+    flex-direction: column-reverse;
+}
+.herosection .heroimage img {
+    width: 100%;
+}
+
+.workmetrix h4{
+    font-size: 14px;
+}
+
+.workmetrix .work-metrix h6{
+    font-size: 10px;
+}
+.workmetrix .work-metrix p {
+    font-size: 10px;
+}
+.workprojects {
+    flex-direction: column;
+}
+.workprojects img {
+    width: 300px;
+    height: 200px;
+}
+.logodescription {
+    width: 600px;
+    padding: 10px;
+    padding-bottom: 10px;
+    display: flex;
+}
+.logo .logodescription h4 {
+    font-size: 23px;
+}
+.logobutton button {
+    padding: none;
+    font-size: 5px;
+    margin-top: 2px;
+}
+
 }
